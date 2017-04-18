@@ -34,6 +34,13 @@ namespace TidyHQ.Resources
         public string emergency_contact_number { get; set; }
         public string profile_image { get; set; }
         public string status { get; set; }
-
+        public List<CustomField> custom_fields { get; set; }
+    }
+    public class CustomField
+    {
+        public string id { get; set; }
+        public string title { get; set; }
+        public string type { get; set; }
+        public string value { get; set; }
     }
 }
